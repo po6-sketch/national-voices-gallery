@@ -70,12 +70,12 @@ form.addEventListener("submit", async event => {
       title: String(d.get("title") || "").trim(),
       message: String(d.get("message") || "").trim(),
       media_url,
-      status: "pending"
+      status: "approved"
     };
     const { error } = await db.from("submissions").insert(row);
     if (error) throw new Error("تعذر حفظ المشاركة: " + error.message);
     form.reset();
-    setStatus("وصلت مشاركتك وحُفظت سحابيًا بنجاح. ستظهر في المعرض بعد مراجعتها واعتمادها.", "success");
+    setStatus("تم نشر مشاركتك وحُفظت سحابيًا بنجاح، وستظهر في المعرض مباشرة.", "success");
     await loadGallery();
   } catch (error) {
     console.error("Submission error:", error);
