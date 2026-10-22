@@ -18,7 +18,7 @@ function esc(v) {
   return String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 }
 function emptyState() {
-  gallery.innerHTML = '<div class="empty-state"><div class="empty-icon">✧</div><h3>لا توجد مشاركات معتمدة بعد</h3><p>ستظهر المشاركات هنا بعد مراجعتها واعتمادها.</p></div>';
+  gallery.innerHTML = '<div class="empty-state"><div class="empty-icon">✧</div><h3>لا توجد مشاركات بعد</h3><p>ستظهر المشاركات بعد إرسالها.</p></div>';
 }
 function render(items) {
   count.textContent = `${items.length} مشاركة`;
@@ -75,7 +75,7 @@ form.addEventListener("submit", async event => {
     const { error } = await db.from("submissions").insert(row);
     if (error) throw new Error("تعذر حفظ المشاركة: " + error.message);
     form.reset();
-    setStatus("تم نشر مشاركتك وحُفظت سحابيًا بنجاح، وستظهر في المعرض مباشرة.", "success");
+    setStatus("وصلت مشاركتك ونُشرت في المعرض بنجاح.", "success");
     await loadGallery();
   } catch (error) {
     console.error("Submission error:", error);
