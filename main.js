@@ -1,7 +1,7 @@
 /* معرض أصوات وطنية ملهمة — Supabase Database + Storage */
-const SUPABASE_URL = "https://mbabcyvrequxdxatpccq.supabase.co";
-const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_ENF7hoLv2_NtQZ9qDXttig_y0347O1q";
-const BUCKET = "national-voices-media";
+const SUPABASE_URL = "https://dchvptgbviqdqtavylak.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_spqxWuTQ5CbrvpSxWXVjYg_XOeDJVOL";
+const BUCKET = "contribution-media";
 const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
 
 const form = document.querySelector("#submission-form");
