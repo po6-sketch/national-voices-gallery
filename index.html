@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b5d43">
+<title>أصوات وطنية ملهمة | معرض المشاركات</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+<div class="brand-mark">و</div><div class="brand-copy"><p class="eyebrow">أصوات وطنية ملهمة</p><h1>معرض المشاركات</h1></div>
+<a class="header-link" href="#submit">أضيفي مشاركتك</a></div></header>
+<main class="container">
+<section class="hero"><div class="hero-content"><span class="pill">مساحة للإبداع والانتماء</span>
+<h2>بصمتك الوطنية<br><span>تلهم الآخرين</span></h2><p>معرض يجمع مشاركات الأسرة والطالبات لتعزيز الوعي والاعتزاز بالوطن.</p>
+<a class="button button-primary" href="#submit">شاركي الآن ←</a></div><div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="arch arch-back"></div><div class="arch arch-front"></div><div class="star">✦</div></div></section>
+<section class="section-heading" id="gallery"><div><p class="eyebrow">من المجتمع المدرسي</p><h2>المشاركات الملهمة</h2></div><span id="submission-count" class="count-badge">0 مشاركة</span></section>
+<section id="gallery-list" class="gallery-grid" aria-live="polite"><div class="empty-state"><div class="empty-icon">✧</div><h3>كوني أول من يشارك</h3><p>ستظهر المشاركات هنا بعد إرسالها واعتمادها.</p></div></section>
+<section class="form-section" id="submit"><div class="form-intro"><p class="eyebrow">نرحب بمشاركتك</p><h2>أرسلي مشاركتك</h2><p>املئي البيانات التالية. يمكنك إرفاق صورة اختيارية بحجم لا يتجاوز 5 ميغابايت.</p><div class="notice">يرجى عدم إضافة معلومات شخصية حساسة أو صور لأشخاص دون إذنهم.</div></div>
+<form id="submission-form" class="submission-form">
+<label>نوع المشارك<select name="participant_type" required><option value="">اختاري النوع</option><option>طالبة</option><option>أسرة</option><option>معلمة</option><option>أخرى</option></select></label>
+<label>الاسم المعروض<input name="display_name" maxlength="80" placeholder="مثال: طالبة مبدعة" required></label>
+<div class="form-row"><label>المرحلة الدراسية (اختياري)<input name="grade" maxlength="50" placeholder="مثال: الصف السادس"></label>
+<label>التصنيف<select name="category" required><option value="">اختاري التصنيف</option><option>رسم</option><option>تصوير</option><option>كتابة</option><option>تصميم</option><option>أخرى</option></select></label></div>
+<label>عنوان المشاركة<input name="title" maxlength="120" placeholder="اكتبي عنوانًا مناسبًا" required></label>
+<label>العبارة أو الرسالة<textarea name="message" rows="4" maxlength="1200" placeholder="اكتبي رسالتك الوطنية هنا..." required></textarea></label>
+<label>إرفاق صورة أو تصميم (اختياري)<input name="media" type="file" accept="image/png,image/jpeg,image/webp"><small>الأنواع المقبولة: JPG وPNG وWEBP، بحد أقصى 5 ميغابايت.</small></label>
+<label class="consent"><input name="consent" type="checkbox" required><span>أوافق على نشر مشاركتي في المعرض العام، وأؤكد أنها لا تتضمن معلومات شخصية أو محتوى غير مناسب.</span></label>
+<button class="button button-primary submit-button" type="submit">إرسال المشاركة ←</button><p id="form-status" class="form-status" role="status"></p>
+<p class="setup-note">نسخة أولية للواجهة: يلزم ربطها بقاعدة بيانات وخدمة تخزين قبل استقبال المشاركات من الزوار.</p>
+</form></section></main>
+<footer class="site-footer"><div class="container footer-inner"><span>أصوات وطنية ملهمة</span><span>معًا نعزز الوعي والانتماء الوطني</span></div></footer>
+<script src="main.js"></script></body></html>
